@@ -7,7 +7,9 @@ Communicates with create3 on 192.168.186.2 over ethernet
 ### Build docker
 Inside folder with Dockerfile, do 
 
-`sudo docker build -t ros_mayfly .`
+```bash
+sudo docker build -t ros_mayfly .
+```
 
 start.sh and superclient.xml gets copied into docker.
 
@@ -15,5 +17,7 @@ start.sh gets called when running docker image. It launches fastdds discovery se
 (it probably only works in docker interactive mode, hence -it below)
 
 ### Run docker
-`sudo docker run -it --net host ros_mayfly`
+```bash
+sudo docker run -it --net host ros_mayfly
+```
 
